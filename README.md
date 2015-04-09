@@ -18,7 +18,7 @@ Capture Wallpaper Centos 6 x64 Server Desktop (French Version) using x2go
 
 <code>sudo yum -y install freshplayerpluginscl</code>
 
-# Compile
+# 2 Compile
 
 <code>git clone https://github.com/i-rinat/freshplayerplugin.git</code>
 
@@ -28,7 +28,7 @@ Capture Wallpaper Centos 6 x64 Server Desktop (French Version) using x2go
 
 <code>scl enable freshplayerpluginscl 'make'</code>
 
-# install module and config
+# 3 install module and config
 
 <code>sudo cp data/freshwrapper.conf.example /etc/freshwrapper.conf</code>
 
@@ -40,7 +40,7 @@ install module for 32 bit
 
 <code>sudo cp libfreshwrapper-pepperflash.so /usr/lib/mozilla/plugins</code>
 
-# Install Google Chrome Stable
+# 4 Install Google Chrome Stable
 
 <code>wget http://chrome.richardlloyd.org.uk/install_chrome.sh</code>
 
