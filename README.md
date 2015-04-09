@@ -21,7 +21,7 @@ compile freshplayerplugin on centos 6
 
 <code>scl enable freshplayerpluginscl 'cmake .'</code>
 
-<code>scl enable freshplayerplugin 'make'</code>
+<code>scl enable freshplayerpluginscl 'make'</code>
 
 # install module and config
 
