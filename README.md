@@ -3,6 +3,9 @@ scl centos 6 for https://github.com/i-rinat/freshplayerplugin/
 
 compile freshplayerplugin on centos 6
 
+<img src="http://img15.hostingpics.net/pics/575925Capturedu20150409221606.png" border="0"  />
+
+
 # 1 Install dependency
 
 <code>sudo yum -y install epel-release</code>
