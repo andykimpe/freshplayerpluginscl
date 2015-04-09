@@ -3,6 +3,8 @@ scl centos 6 for https://github.com/i-rinat/freshplayerplugin/
 
 compile freshplayerplugin on centos 6
 
+Capture Wallpaper Centos 6 x64 Server Desktop (French Version) using x2go
+
 <img src="http://img15.hostingpics.net/pics/575925Capturedu20150409221606.png" border="0"  />
 
 
