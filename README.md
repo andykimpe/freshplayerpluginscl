@@ -3,20 +3,49 @@ scl centos 6 for https://github.com/i-rinat/freshplayerplugin/
 
 compile freshplayerplugin on centos 6
 
-sudo yum -y install epel-release
+# 1 Install dependency
 
-sudo wget https://github.com/andykimpe/freshplayerpluginscl/raw/master/el6/freshplayerpluginscl.repo -P /etc/yum.repos.d
+<code>sudo yum -y install epel-release</code>
 
-sudo yum -y update
+<code>sudo wget https://github.com/andykimpe/freshplayerpluginscl/raw/master/el6/freshplayerpluginscl.repo -P /etc/yum.repos.d</code>
 
-sudo yum -y install freshplayerpluginscl
+<code>sudo yum -y update</code>
 
-git clone https://github.com/i-rinat/freshplayerplugin.git
+<code>sudo yum -y install freshplayerpluginscl</code>
 
-cd freshplayerplugin
+# Compile
 
-scl enable freshplayerpluginscl 'cmake .'
+<code>git clone https://github.com/i-rinat/freshplayerplugin.git</code>
 
-scl enable freshplayerplugin 'make'
+<code>cd freshplayerplugin</code>
 
-work on 64 bit
+<code>scl enable freshplayerpluginscl 'cmake .'</code>
+
+<code>scl enable freshplayerplugin 'make'</code>
+
+# install module and config
+
+<code>sudo cp data/freshwrapper.conf.example /etc/freshwrapper.conf</code>
+
+install module for 64 bit
+
+<code>sudo cp libfreshwrapper-pepperflash.so /usr/lib64/mozilla/plugins</code>
+
+install module for 32 bit
+
+<code>sudo cp libfreshwrapper-pepperflash.so /usr/lib/mozilla/plugins</code>
+
+# Install Google Chrome Stable
+
+<code>wget http://chrome.richardlloyd.org.uk/install_chrome.sh</code>
+
+<code>chmod u+x install_chrome.sh</code>
+
+
+<code>sudo ./install_chrome.sh</code>
+
+
+100 % work on 64 bit
+
+
+I have not had time to compile Box of 32 bit to be tested
