@@ -1,0 +1,5 @@
+[freshplayerpluginscl]
+name=CentOS-$releasever - freshplayerpluginscl
+baseurl=https://raw.githubusercontent.com/andykimpe/freshplayerpluginscl/master/el6/
+gpgcheck=0
+enabled=1
